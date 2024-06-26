@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Responsive Image Search App</title>
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+</head>
+<style>
+    *{
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+    body{
+        background-color: beige;
+        width: 100%;
+        
+    }
+    header h2{
+     text-align: center;
+     padding: 20px;
+     font-weight: 900;
+    } 
+    .for-search{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 40px;
+      
+    }
+    .for-search input{
+        border: 2px solid black;
+        border-radius: 10px;
+        width: 500px;
+        min-height: 30px;
+        background-color: rgb(231, 241, 250);
+        
+        
+    }
+    .for-search button{
+        border-radius: 10px;
+        padding: 8px;
+        margin: 5px;
+        background-color: rgb(231, 241, 250);
+    }
+   
+    .image_container{
+     width: 100%;
+     text-align: center;
+     justify-content: center;
+     display: inline-block;
+     align-items: center;
+    
+    
+
+   }
+   .image_container img{
+    width: 200px;
+    height: 200px;
+    margin: 30px;
+ }
+   
+   .image_container img:hover{
+     color: white;
+     filter: blur(3px);
+     -webkit-filter: blur(3px);}
+  #loadMore{
+    display: none;
+    background-color: rgb(255, 182, 194);
+    border: none;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 20px;
+    margin-left: 550px;
+    
+   
+
+  }
+</style>
+<body>
+    <header>
+        <h2>Image Search App</h2>
+    </header>
+    <main>
+        <form action="">
+            <div class="for-search">
+                <input type="search" />
+                <button type="submit" class="bx bx-search" id="search-btn"></button>
+            </div>
+           
+        </form>
+        <div class="image_container">
+
+        <!-- <img src="img\pexels-photo-462205 - Copy.jpeg" alt="" >
+        <img src="img\pexels-photo-462205 - Copy.jpeg" alt="">
+        <img src="img/pexels-photo-1080696 - Copy.jpeg" alt="">
+        <img src="img/pexels-photo-1080696 - Copy.jpeg" alt="">
+        <img src="img\pexels-photo-2079249 - Copy.jpeg" alt="">
+        <img src="img/pexels-photo-1080696 - Copy.jpeg" alt="">
+        <img src="img/pexels-photo-1080696 - Copy.jpeg" alt="">
+        <img src="img\pexels-photo-2462015 - Copy.webp" alt="">
+        <img src="img\pexels-photo-2462015 - Copy.webp" alt="">
+        <img src="img/pexels-photo-1080696 - Copy.jpeg" alt=""> -->
+    
+        
+        </div>
+        <button id="loadMore" >Load More</button>
+    </main>
+     <script src="script.js"></script>
+</body>
+</html>

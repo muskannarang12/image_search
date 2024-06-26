@@ -1,0 +1,2 @@
+encodeURIComponent is a function that encodes the query string to ensure it is a valid URL parameter. It converts characters such as 
+spaces into a format that can be safely included in a URL (e.g., spaces become %20).
